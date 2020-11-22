@@ -8,6 +8,7 @@ import {
 
 import './style.css'
 import ArticleList from '../ArticleList'
+import TagList from '../TagList';
 
 function Home() {
 
@@ -55,6 +56,8 @@ function Home() {
           className="no-flex sm-full"
         >
           Tags populares
+          <br />
+          <TagList />
         </aside>
       </div>
     </>
