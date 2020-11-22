@@ -8,6 +8,7 @@
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .header-menu {
   color: #0000004d;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,6 +17,11 @@
   padding-right: 0;
   font-size: 0.9em;
 }
+
+.header-menu.active {
+  color: #000000cc;
+}
+
 .header-float-right {
   float: right;
 }
