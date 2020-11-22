@@ -1,9 +1,10 @@
 import {
-  Route,
-  Switch,
   BrowserRouter as Router,
-  Redirect
+  Switch,
+  Redirect,
+  Route
 } from 'react-router-dom'
+
 import './App.css'
 import Header from './components/Header'
 import Home from './components/Home'
@@ -18,9 +19,9 @@ function App() {
           <Auth />
         </Route>
         <Route path="/register">
-          <h1>Cadastrar</h1>
+          <Auth />
         </Route>
-        <Route exact path="/home">
+        <Route path="/home">
           <Home />
         </Route>
         <Route exact path="/">
