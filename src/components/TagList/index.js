@@ -1,21 +1,19 @@
+import { useState } from 'react'
 import './style.css'
 
 function TagList() {
-  return (
-    <>
+
+  const [tags] = useState([])
+
+  return tags.map(tag => (
       <a
+        key={tag}
         href="/"
         className="tag-list-a"
       >
-        tag1
+        {tag}
       </a>
-      <a
-        href="/"
-        className="tag-list-a"
-      >
-        tag2
-      </a>
-    </>
+    )
   )
 }
 
