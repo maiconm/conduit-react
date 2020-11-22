@@ -11,7 +11,7 @@ function TagList() {
         setTags(tags)
       })
     })
-  })
+  }, [])
 
   if (!loadedTags) return '⏳ Carregando...'
 
